@@ -14,6 +14,15 @@ variables:
       icapi_ds_external_id: ds_icapi
       icapi_space_name: icapi_dm_space
 
+      # Variables shared by modules
+      icapi_ds_external_id: ds_icapi
+      icapi_space_name: icapi_dm_space
+      scheduleHourly: '47 0 * * *'     # 00:47 cada noche (minuto = nº de proyecto)
+      pause_transformations: true       # true = desplegado pero sin ejecutarse
+      location_name: <ver abajo>
+      source_name: <ver abajo>
+
+
       data_foundation:
         data_developer_source_id: ${DATA_DEVELOPER_SOURCE_ID}
 
